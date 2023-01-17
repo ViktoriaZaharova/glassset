@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+footer {
+  color: #fff;
+  padding: 49px 0 38px;
+  background: #313131;
+  font-size: 14px;
+}
+footer .logo {
+  max-width: 150px;
+  margin: 0 auto 0 0;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+footer .list-messengers {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin: 0 0 0 30px;
+}
+
+.footer-menu {
+  margin: 0 60px 0 0;
+  line-height: 17px;
+}
+.footer-menu:last-child {
+  margin: 0;
+}
+.footer-menu li {
+  margin: 0 0 10px;
+}
+.footer-menu li:last-child {
+  margin: 0;
+}
+.footer-menu li a {
+  color: #fff;
+}
+.footer-menu li a:hover {
+  color: #D60000;
+}
+
+.footer-box {
+  font-weight: 600;
+  margin: 0 35px 0 0;
+}
+.footer-box:last-child {
+  margin: 0;
+}
+.footer-box a {
+  color: #fff;
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+.footer-box a:hover {
+  color: #D60000;
+}

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header {
+  background: #fff;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header.fixed {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 31px 0 0;
+}
+.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 56px;
+  margin: 0 7px 0 0;
+}
+
+.header-top {
+  padding: 22px 0 18px;
+}
+
+.form-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+  max-width: 525px;
+  width: 100%;
+}
+.form-search label {
+  margin: 0;
+}
+.form-search button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #919191;
+  border-radius: 0px 5px 5px 0px;
+  width: 43px;
+  height: 100%;
+  padding: 11px;
+  fill: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.form-search button:hover {
+  background: #D60000;
+}
+
+.messengers-box {
+  font-size: 12px;
+  color: #141414;
+  margin: 0 auto 0 63px;
+}
+.messengers-box p {
+  margin: 2px 0 0;
+}
+
+.list-messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list-messengers li {
+  margin: 0 15px 0 0;
+}
+.list-messengers li:last-child {
+  margin: 0;
+}
+
+.basket-link {
+  position: relative;
+  width: 42px;
+  height: 34px;
+  fill: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.basket-link__val {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #D60000;
+  top: -6px;
+  right: -8px;
+}
+.basket-link:hover {
+  color: #fff;
+}
+
+.header-box {
+  margin: 0 0 0 59px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mail {
+  color: #141414;
+}
+.mail:hover {
+  color: #D60000;
+}
+
+.phone {
+  font-size: 16px;
+  margin: 5px 0 0;
+}
+
+.header-bottom {
+  border-top: 1px solid #AAAAAA;
+  padding: 20px 0 15px;
+}
+
+.nav-menu {
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu li {
+  margin: 0 52px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu a {
+  padding: 0;
+  color: #000;
+}
+.menu a:hover, .menu a:focus {
+  color: #D60000;
+}
+
+.dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown-toggle::after {
+  border-top: 5px solid #D60000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 0 0 0 10px;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+.dropdown-menu .dropdowm-item {
+  padding: 5px 15px;
+  width: 100%;
+}
+.dropdown-menu .dropdowm-item:hover {
+  background: #ECEDEF;
+}
+
+.btn-catalog {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-catalog__icon {
+  margin: 0 17px 0 0;
+  position: relative;
+  width: 22px;
+  height: 13px;
+  min-width: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.btn-catalog__icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}

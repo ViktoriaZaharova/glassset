@@ -1,0 +1,161 @@
+@import "fonts"
+@import "vars"
+
+// header
+header
+	background: #fff
+	position: fixed
+	z-index: 5
+	left: 0
+	top: 0
+	width: 100%
+	transition: .3s ease
+	&.fixed
+		background: rgba(#fff, .85)
+
+.logo
+	display: flex
+	align-items: center
+	margin: 0 31px 0 0
+	&-icon
+		@include d-flex
+		max-width: 56px
+		margin: 0 7px 0 0	
+
+.header-top
+	padding: 22px 0 18px
+	
+.form-search
+	display: flex
+	align-items: start
+	position: relative
+	max-width: 525px
+	width: 100%
+	label
+		margin: 0
+	button
+		@include d-flex
+		background: #919191
+		border-radius: 0px 5px 5px 0px
+		width: 43px
+		height: 100%
+		padding: 11px
+		fill: #fff
+		position: absolute
+		right: 0
+		top: 0
+		&:hover
+			background: $accent	
+
+.messengers-box
+	font-size: 12px
+	color: #141414
+	margin: 0 auto 0 63px
+	p
+		margin: 2px 0 0
+
+.list-messengers
+	display: flex
+	align-items: center
+	li
+		margin: 0 15px 0 0
+		&:last-child
+			margin: 0
+
+.basket-link
+	position: relative
+	width: 42px
+	height: 34px
+	fill: #000
+	color: #fff
+	font-size: 14px
+	font-weight: 600
+	&__val
+		position: absolute
+		@include d-flex
+		text-align: center
+		width: 20px
+		height: 20px
+		border-radius: 50%
+		background: #D60000
+		top: -6px
+		right: -8px
+	&:hover
+		color: #fff
+
+.header-box
+	margin: 0 0 0 59px
+	font-size: 14px
+	font-weight: 600
+
+.mail
+	color: #141414
+	&:hover
+		color: $accent
+
+.phone
+	font-size: 16px
+	margin: 5px 0 0		
+
+.header-bottom
+	border-top: 1px solid #AAAAAA	
+	padding: 20px 0 15px
+
+.nav-menu
+	margin: 0 auto 
+
+.menu
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 16px
+	font-weight: 600
+	li
+		margin: 0 52px 0 0
+		&:last-child
+			margin: 0
+	a
+		padding: 0
+		color: #000
+		&:hover, &:focus
+			color: $accent
+
+.dropdown-toggle
+	display: flex
+	align-items: center
+	&::after
+		border-top: 5px solid $accent
+		border-left: 5px solid transparent
+		border-right: 5px solid transparent
+		margin: 0 0 0 10px
+
+.dropdown-menu
+	border-radius: 0
+	.dropdowm-item
+		padding: 5px 15px
+		width: 100%
+		&:hover
+			background: $light-grey	
+
+.btn-catalog
+	text-transform: uppercase
+	font-size: 18px
+	font-weight: 600
+	&__icon
+		margin: 0 17px 0 0
+		position: relative
+		width: 22px
+		height: 13px
+		min-width: 22px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		span
+			display: block
+			width: 100%
+			height: 2px
+			background: #fff
+
+
+// header end
