@@ -43,8 +43,7 @@ $(document).ready(function () {
 		asNavFor: '.home-slider',
 		variableWidth: true,
 		cssEase: 'linear',
-		// autoplay: true,
-		// autoplaySpeed: 4000,
+		speed: 1500,
 		pauseOnHover: false,
 	});
 
@@ -91,7 +90,6 @@ $('.product-card-slider').slick({
 	slidesToShow: 1,
 	arrows: false,
 	dots: true,
-	// fade: true
 });
 
 $('.news-slider').slick({
