@@ -20,7 +20,15 @@
   position: relative;
   z-index: 1;
 }
-.home-slider::before {
+.home-slider-item {
+  position: relative;
+  padding: 240px 0 377px;
+  z-index: 1;
+}
+.home-slider-item > * {
+  z-index: 2;
+}
+.home-slider-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -29,10 +37,7 @@
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-}
-.home-slider-item {
-  position: relative;
-  padding: 240px 0 377px;
+  z-index: 1;
 }
 .home-slider-item__bg {
   position: absolute;
@@ -95,23 +100,10 @@
   z-index: 2;
   width: 631px;
   height: 100%;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
   border-radius: 5px;
   padding: 20px;
-}
-.home-navigation-slider-item__open::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  border-radius: 0px 0px 5px 5px;
-  height: 6px;
-  background: #D60000;
-  z-index: 1;
-  -webkit-animation: width 3s ease-in-out infinite;
-          animation: width 3s ease-in-out infinite;
 }
 .home-navigation-slider-item::before {
   content: "";
@@ -152,23 +144,20 @@
   max-height: 100%;
 }
 
-@-webkit-keyframes width {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+.slider-progress {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+}
+.slider-progress .progress {
+  background: #D60000;
+  height: 100%;
+  border-radius: 0px 0px 5px 5px;
 }
 
-@keyframes width {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
 .best-offers {
   margin: 75px 0 0;
 }
@@ -259,6 +248,43 @@
           filter: drop-shadow(0px 15px 45px rgba(0, 0, 0, 0.1));
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.best-offers-slider .slick-arrow {
+  top: -58px;
+  left: auto;
+  right: 0;
+  -webkit-transform: none;
+          transform: none;
+  width: 10px;
+  height: 18px;
+  border-radius: 0;
+  border: none;
+}
+.best-offers-slider .slick-arrow svg {
+  stroke: #E8E8E8;
+}
+.best-offers-slider .slick-arrow:hover {
+  background: transparent;
+}
+.best-offers-slider .slick-arrow:hover svg {
+  stroke: #999999;
+}
+.best-offers-slider .slick-prev {
+  right: 30px;
+}
+
+.product-card-slider .slick-dots {
+  margin: 7px 0 0;
+}
+
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block;
+  height: 0;
+}
+
+.tab-content > .active, .pill-content > .active {
+  height: auto;
 }
 
 .sales {
