@@ -42,6 +42,14 @@
 			left: 0
 			top: 0
 
+// .swiper-wrapper
+// 	align-items: stretch
+// 	.swiper-slide
+// 		height: auto
+// 	.home-slider-item
+// 		height: 100%	
+
+
 .home-navigation
 	position: absolute
 	bottom: 83px
@@ -51,17 +59,30 @@
 
 .home-navigation-slider
 	position: relative
+	overflow-x: hidden
+	overflow-y: visible
+	.slick-list
+		margin: 0
 	.slick-slide
-		padding: 0 6px
+		padding: 0 4px
+		// margin: 0 -417px 0 0
+		// width: 222px
+		// width: 639px
 	.slick-current
+		// margin: 0
 		.home-navigation-slider-item
 			width: 631px
 			&__open
 				opacity: 1
 				pointer-events: auto
 
+
 .home-navigation-slider-item
 	width: 214px
+	will-change: width
+	// width: 214px
+	
+	height: 100%
 	border-radius: 5px
 	position: relative
 	transition: .25s ease
@@ -211,12 +232,12 @@
 	.slick-dots
 		margin: 7px 0 0
 
-.tab-content > .tab-pane, .pill-content > .pill-pane 
-	display: block 
-	height: 0 
+.tab-content > .tab-pane, .pill-content > .pill-pane
+	display: block
+	height: 0
 	//overflow: hidden 
-.tab-content > .active, .pill-content > .active 
-	height: auto 
+.tab-content > .active, .pill-content > .active
+	height: auto
 // best-offers end
 
 // sales

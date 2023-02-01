@@ -12,18 +12,7 @@ $('.home-slider').slick({
 	// asNavFor: '.home-navigation-slider',
 });
 
-// $('.home-navigation-slider').slick({
-// 	slidesToShow: 4,
-// 	slidesToScroll: 1,
-// 	focusOnSelect: true,
-// 	arrows: false,
-// 	asNavFor: '.home-slider',
-// 	variableWidth: true,
-// 	cssEase: 'linear',
-// 	autoplay: true,
-// 	autoplaySpeed: 4000,
-// 	pauseOnHover: false,
-// });
+
 
 $(document).ready(function () {
 	var time = 2;
@@ -42,8 +31,9 @@ $(document).ready(function () {
 		arrows: false,
 		asNavFor: '.home-slider',
 		variableWidth: true,
+		// centerMode: true,
 		cssEase: 'linear',
-		speed: 1500,
+		speed: 2500,
 		pauseOnHover: false,
 	});
 
@@ -59,31 +49,31 @@ $(document).ready(function () {
 		}
 	});
 
-	function startProgressbar() {
-		resetProgressbar();
-		percentTime = 0;
-		isPause = false;
-		tick = setInterval(interval, 20);
-	}
-	function interval() {
-		percentTime += 1 / (time + 0.1);
-		$bar.css({
-			width: percentTime + '%'
-		});
+	// function startProgressbar() {
+	// 	resetProgressbar();
+	// 	percentTime = 0;
+	// 	isPause = false;
+	// 	tick = setInterval(interval, 20);
+	// }
+	// function interval() {
+	// 	percentTime += 1 / (time + 0.1);
+	// 	$bar.css({
+	// 		width: percentTime + '%'
+	// 	});
 
-		if (percentTime >= 100) {
-			$slick.slick('slickNext');
-			startProgressbar();
-		}
-	}
+	// 	if (percentTime >= 100) {
+	// 		$slick.slick('slickNext');
+	// 		startProgressbar();
+	// 	}
+	// }
 
-	function resetProgressbar() {
-		$bar.css({
-			width: 0 + '%'
-		});
-		clearTimeout(tick);
-	}
-	startProgressbar();
+	// function resetProgressbar() {
+	// 	$bar.css({
+	// 		width: 0 + '%'
+	// 	});
+	// 	clearTimeout(tick);
+	// }
+	// startProgressbar();
 });
 
 $('.product-card-slider').slick({
@@ -137,9 +127,9 @@ $('.best-offers-slider').slick({
 
 
 // slider in bootstrap tabs
-// $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-// 	$('.tab-pane.show').find('.slick-slider').slick('setPosition');
-// });
+$('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+	$('.tab-pane.show').find('.slick-slider').slick('setPosition');
+});
 
 
 // header fixed
@@ -150,3 +140,5 @@ $(window).scroll(function () {
 		$('header').removeClass('fixed');
 	}
 });
+
+new WOW().init();
