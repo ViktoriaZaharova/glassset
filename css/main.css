@@ -866,3 +866,15 @@
   font-weight: 500;
   line-height: 12px;
 }
+
+.page h1 {
+  margin: 0 0 20px;
+}
+
+.page-catalog {
+  margin: 0 0 80px;
+}
+
+.page-category {
+  margin: 0 0 52px;
+}

@@ -382,6 +382,12 @@
   footer .logo .logo-text {
     max-width: 210px;
   }
+  .page-catalog {
+    margin: 0 0 60px;
+  }
+  .nav-breadcrumb {
+    margin: 20px 0;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo-icon {
@@ -437,6 +443,14 @@
   }
   .modal-header {
     margin: 0 0 20px;
+  }
+  .pagination .page-item {
+    margin: 0 5px 0 0;
+  }
+  .pagination .page-link {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 420px) {
