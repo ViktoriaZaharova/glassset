@@ -33,6 +33,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 d-flex align-items-center flex-wrap">
+
+
 							<a href="index.html" class="logo">
 								<span class="logo-icon"><img src="img/logo-icon.svg" alt=""></span>
 								<span class="logo-text"><img src="img/logo-text.svg" alt=""></span>
@@ -67,12 +69,19 @@
 								<a href="mailto:217-340@steklo58.ru" class="mail">217-340@steklo58.ru</a>
 								<a href="tel:+79677017340" class="phone color-accent">+7 (967) 701-73-40</a>
 							</div>
+
+							<div class="btn-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="header-bottom">
+				<div class="header-bottom__close"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-12 d-flex align-items-center flex-wrap">
@@ -86,8 +95,16 @@
 								<span class="btn-catalog__text">Каталог</span>
 							</a>
 
+							<form method="post" class="form-search">
+								<label><input type="text" placeholder="Поиск по товарам" name="search"></label>
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+							</form>
+
 							<nav class="nav-menu">
 								<ul class="menu my-ul">
+									<li class="menu-item-catalog"><a href="catalog.html" class="nav-link">Каталог</a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Как купить</a>
 										<div class="dropdown-menu">
@@ -109,6 +126,21 @@
 									<li><a href="contacts.html" class="nav-link">Контакты</a></li>
 								</ul>
 							</nav>
+
+							<div class="messengers-box">
+								<ul class="list-messengers my-ul">
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+								</ul>
+								<p>Напишите нам</p>
+							</div>
+
+							<div class="header-box">
+								<a href="mailto:217-340@steklo58.ru" class="mail">217-340@steklo58.ru</a>
+								<a href="tel:+79677017340" class="phone color-accent">+7 (967) 701-73-40</a>
+							</div>
+
 
 							<a href="#" class="btn btn-md btn-border-accent" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Обратный звонок</a>
@@ -172,19 +204,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="slide">
+				<!-- <div class="slide">
 					<div class="home-slider-item">
 						<img src="img/home-bg.jpg" alt="" class="home-slider-item__bg">
 						<div class="container">
 							<div class="row">
 								<div class="col-12">
-									<div class="h1">Запчасти для станков</div>
+									<div class="h1">Защитная пленка</div>
 									<div class="subtitle">Готовые комплекты фурнитуры для душевой</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="home-navigation">
@@ -196,7 +228,7 @@
 									<div class="home-navigation-slider-item">
 										<div class="home-navigation-slider-item__front">
 											<div class="home-navigation-slider-item__icon">
-												<img src="img/home-icon2.svg" alt="">
+												<img src="img/home-icon1.svg" alt="">
 											</div>
 											<h4>Фурнитура</h4>
 										</div>
@@ -288,16 +320,16 @@
 										</div>
 									</div>
 								</div>
-								<div class="slide">
+								<!-- <div class="slide">
 									<div class="home-navigation-slider-item">
 										<div class="home-navigation-slider-item__front">
 											<div class="home-navigation-slider-item__icon">
-												<img src="img/home-icon4.svg" alt="">
+												<img src="img/home-icon5.svg" alt="">
 											</div>
-											<h4>Запчасти для станков</h4>
+											<h4>Защитная пленка</h4>
 										</div>
 										<div class="home-navigation-slider-item__open">
-											<h3>Запчасти для станков</h3>
+											<h3>Защитная пленка</h3>
 											<div class="box-text">
 												<p>Готовые комплекты фурнитуры для душевой</p>
 											</div>
@@ -312,6 +344,78 @@
 										</div>
 									</div>
 								</div>
+								<div class="slide">
+									<div class="home-navigation-slider-item">
+										<div class="home-navigation-slider-item__front">
+											<div class="home-navigation-slider-item__icon">
+												<img src="img/home-icon6.svg" alt="">
+											</div>
+											<h4>Комплектующие для зеркал</h4>
+										</div>
+										<div class="home-navigation-slider-item__open">
+											<h3>Комплектующие для зеркал</h3>
+											<div class="box-text">
+												<p>Готовые комплекты фурнитуры для душевой</p>
+											</div>
+								
+											<div class="btn-group">
+												<a href="#" class="btn btn-accent">Кнопка 1</a>
+												<a href="#" class="btn btn-border-accent">Кнопка 2</a>
+											</div>
+											<div class="slider-progress">
+												<div class="progress"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="home-navigation-slider-item">
+										<div class="home-navigation-slider-item__front">
+											<div class="home-navigation-slider-item__icon">
+												<img src="img/home-icon7.svg" alt="">
+											</div>
+											<h4>Упаковка</h4>
+										</div>
+										<div class="home-navigation-slider-item__open">
+											<h3>Упаковка</h3>
+											<div class="box-text">
+												<p>Готовые комплекты фурнитуры для душевой</p>
+											</div>
+								
+											<div class="btn-group">
+												<a href="#" class="btn btn-accent">Кнопка 1</a>
+												<a href="#" class="btn btn-border-accent">Кнопка 2</a>
+											</div>
+											<div class="slider-progress">
+												<div class="progress"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="home-navigation-slider-item">
+										<div class="home-navigation-slider-item__front">
+											<div class="home-navigation-slider-item__icon">
+												<img src="img/home-icon8.svg" alt="">
+											</div>
+											<h4>Круги и шлиф ленты</h4>
+										</div>
+										<div class="home-navigation-slider-item__open">
+											<h3>Круги и шлиф ленты</h3>
+											<div class="box-text">
+												<p>Готовые комплекты фурнитуры для душевой</p>
+											</div>
+								
+											<div class="btn-group">
+												<a href="#" class="btn btn-accent">Кнопка 1</a>
+												<a href="#" class="btn btn-border-accent">Кнопка 2</a>
+											</div>
+											<div class="slider-progress">
+												<div class="progress"></div>
+											</div>
+										</div>
+									</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -355,20 +459,20 @@
 												<div class="product-card-slider">
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product1.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Вакуумный захват с двумя присосками</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product1.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Вакуумный захват с двумя присосками</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product1.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Вакуумный захват с двумя присосками</a>
 														</div>
 													</div>
 												</div>
@@ -413,19 +517,22 @@
 													<div class="slide">
 														<div class="product-card-slide">
 															<a href="product.html" class="product-card__img"><img src="img/product2.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__title">Пленка oracal <br>
+																серия 641</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
 															<a href="product.html" class="product-card__img"><img src="img/product2.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__title">Пленка oracal <br>
+																серия 641</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
 															<a href="product.html" class="product-card__img"><img src="img/product2.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__title">Пленка oracal <br>
+																серия 641</a>
 														</div>
 													</div>
 												</div>
@@ -439,78 +546,21 @@
 												<div class="product-card-slider">
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product8.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Стекло-стена <br> односторонняя
+																ГЛ100</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product8.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Стекло-стена односторонняя ГЛ100</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
-														</div>
-													</div>
-												</div>
-												<div class="btn-group">
-													<a href="product.html" class="btn btn-sm btn-border-accent">Подробнее</a>
-													<a href="basket.html" class="btn btn-sm btn-grey btn-basket">В корзину</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="slide">
-										<div class="best-offers-slider__col">
-											<div class="product-card wow animate__animated animate__fadeInRight animated">
-												<div class="product-card-slider">
-													<div class="slide">
-														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product3.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
-														</div>
-													</div>
-													<div class="slide">
-														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product3.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
-														</div>
-													</div>
-													<div class="slide">
-														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product3.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
-														</div>
-													</div>
-												</div>
-												<div class="btn-group">
-													<a href="product.html" class="btn btn-sm btn-border-accent">Подробнее</a>
-													<a href="basket.html" class="btn btn-sm btn-grey btn-basket">В корзину</a>
-												</div>
-											</div>
-
-											<div class="product-card wow animate__animated animate__fadeInRight animated">
-												<div class="product-card-slider">
-													<div class="slide">
-														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product6.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
-														</div>
-													</div>
-													<div class="slide">
-														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product6.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
-														</div>
-													</div>
-													<div class="slide">
-														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product6.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product8.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Стекло-стена односторонняя ГЛ100</a>
 														</div>
 													</div>
 												</div>
@@ -528,20 +578,20 @@
 												<div class="product-card-slider">
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product4.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product9.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Свинцовая лента</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product4.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product9.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Свинцовая лента</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product4.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product9.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Свинцовая лента</a>
 														</div>
 													</div>
 												</div>
@@ -555,20 +605,84 @@
 												<div class="product-card-slider">
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product10.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Сверла</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product10.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Сверла</a>
 														</div>
 													</div>
 													<div class="slide">
 														<div class="product-card-slide">
-															<a href="product.html" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
-															<a href="product.html" class="product-card__title">Электрокорунд</a>
+															<a href="product.html" class="product-card__img"><img src="img/product10.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Сверла</a>
+														</div>
+													</div>
+												</div>
+												<div class="btn-group">
+													<a href="product.html" class="btn btn-sm btn-border-accent">Подробнее</a>
+													<a href="basket.html" class="btn btn-sm btn-grey btn-basket">В корзину</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="slide">
+										<div class="best-offers-slider__col">
+											<div class="product-card wow animate__animated animate__fadeInRight animated">
+												<div class="product-card-slider">
+													<div class="slide">
+														<div class="product-card-slide">
+															<a href="product.html" class="product-card__img"><img src="img/product11.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Лак гласс тонер с запахом черной
+																смородины</a>
+														</div>
+													</div>
+													<div class="slide">
+														<div class="product-card-slide">
+															<a href="product.html" class="product-card__img"><img src="img/product11.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Лак гласс тонер с запахом черной
+																смородины</a>
+														</div>
+													</div>
+													<div class="slide">
+														<div class="product-card-slide">
+															<a href="product.html" class="product-card__img"><img src="img/product11.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Лак гласс тонер с запахом черной
+																смородины</a>
+														</div>
+													</div>
+												</div>
+												<div class="btn-group">
+													<a href="product.html" class="btn btn-sm btn-border-accent">Подробнее</a>
+													<a href="basket.html" class="btn btn-sm btn-grey btn-basket">В корзину</a>
+												</div>
+											</div>
+
+											<div class="product-card wow animate__animated animate__fadeInRight animated">
+												<div class="product-card-slider">
+													<div class="slide">
+														<div class="product-card-slide">
+															<a href="product.html" class="product-card__img"><img src="img/product12.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Ограждение декоративное балясина глухая
+																d=6мм</a>
+														</div>
+													</div>
+													<div class="slide">
+														<div class="product-card-slide">
+															<a href="product.html" class="product-card__img"><img src="img/product12.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Ограждение декоративное балясина глухая
+																d=6мм</a>
+														</div>
+													</div>
+													<div class="slide">
+														<div class="product-card-slide">
+															<a href="product.html" class="product-card__img"><img src="img/product12.jpg" alt=""></a>
+															<a href="product.html" class="product-card__title">Ограждение декоративное балясина глухая
+																d=6мм</a>
 														</div>
 													</div>
 												</div>
@@ -1241,7 +1355,8 @@
 								<div class="col-12 col-lg-6">
 									<h2 class="wow animate__animated animate__fadeInDown">сниженная цена <br>
 										на сверла для стекла</h2>
-									<a href="catalog.html" class="btn btn-sm btn-accent wow animate__animated animate__fadeInUp">В каталог</a>
+									<a href="catalog.html" class="btn btn-sm btn-accent wow animate__animated animate__fadeInUp">В
+										каталог</a>
 								</div>
 							</div>
 						</div>
@@ -1327,7 +1442,8 @@
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-md-4 mb-20">
-						<a href="catalog.html" class="all-category btn btn-border-accent wow animate__animated animate__fadeInRight">
+						<a href="catalog.html"
+							class="all-category btn btn-border-accent wow animate__animated animate__fadeInRight">
 							<span class="btn-text">смотреть
 								весь каталог</span>
 							<span class="btn-icon"><svg class="svg-icon">
@@ -1360,7 +1476,8 @@
 						</div>
 					</div>
 					<div class="col-12 col-lg-7">
-						<div class="about-image wow animate__animated animate__fadeInRight"><img src="img/about-image.jpg" alt=""></div>
+						<div class="about-image wow animate__animated animate__fadeInRight"><img src="img/about-image.jpg" alt="">
+						</div>
 					</div>
 				</div>
 
@@ -1474,7 +1591,8 @@
 					<div class="col-12 col-md-6">
 						<h2 class="wow animate__animated animate__fadeInDown">Отзывы клиентов</h2>
 					</div>
-					<div class="col-12 col-md-6"><a href="#" class="color-accent link-page wow animate__animated animate__fadeInUp" data-bs-toggle="modal"
+					<div class="col-12 col-md-6"><a href="#"
+							class="color-accent link-page wow animate__animated animate__fadeInUp" data-bs-toggle="modal"
 							data-bs-target="#reviewsModal">Оставить отзыв</a></div>
 				</div>
 
@@ -1604,7 +1722,8 @@
 						<h2 class="wow animate__animated animate__fadeInDown">Новости и акции</h2>
 					</div>
 					<div class="col-12 col-md-6">
-						<a href="news.html" class="color-accent link-page wow animate__animated animate__fadeInUp">Новости и акции</a>
+						<a href="news.html" class="color-accent link-page wow animate__animated animate__fadeInUp">Новости и
+							акции</a>
 					</div>
 				</div>
 
@@ -1727,6 +1846,89 @@
 			</div>
 		</footer>
 
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Оставить отзыв</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Пожалуйста, поделитесь своими впечатлениями о компании или преобретенной продукции.</p>
+					</div>
+
+					<form method="post" class="form-callback">
+						<label>
+							<input type="text" placeholder="Имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="Должность" name="position">
+						</label>
+						<label>
+							<input type="text" placeholder="Название компании" name="name_company">
+						</label>
+						<label class="w100">
+							<textarea name="message" placeholder="Отзыв"></textarea>
+						</label>
+
+						<button type="submit" class="btn btn-accent">Отправить</button>
+						<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Обратный звонок</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text text-center theme-appeals">
+						<p>Выберите тему обращения:</p>
+					</div>
+
+					<form method="post" class="form-callback">
+						<div class="form-group">
+							<label class="label-radio">
+								<input type="radio" class="inp-radio" name="radio" checked>
+								<span class="radio-custom"></span>
+								<span class="radio-text">Продукция</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" class="inp-radio" name="radio">
+								<span class="radio-custom"></span>
+								<span class="radio-text">Сотрудничество</span>
+							</label>
+						</div>
+
+						<label>
+							<input type="text" placeholder="Имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="Телефон" name="phone" required>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить</button>
+						<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
 	</div>
 
 	<!-- add plugins js-->

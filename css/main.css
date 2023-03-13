@@ -229,6 +229,8 @@
   margin: 0 auto;
   font-size: 16px;
   font-weight: 500;
+  min-height: 40px;
+  max-height: 40px;
   color: #000;
 }
 .product-card__title:hover {
@@ -242,6 +244,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .product-card .btn {
   width: -webkit-fit-content;
@@ -398,6 +402,9 @@
   line-height: 24px;
   max-width: 225px;
   margin: 0 0 53px;
+}
+.category-card__title:hover {
+  color: #D60000;
 }
 .category-card .btn {
   margin: auto 0 0;
@@ -589,6 +596,7 @@
   height: 100%;
   color: #000;
   text-align: left;
+  overflow: hidden;
 }
 .advantages-box h3 {
   font-size: 20px;
@@ -852,7 +860,7 @@
 .consent {
   margin: 20px auto 0;
   text-align: center;
-  max-width: 300px;
+  max-width: 275px;
   width: 100%;
   font-size: 10px;
   font-weight: 500;

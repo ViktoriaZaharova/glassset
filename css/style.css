@@ -220,6 +220,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .btn-group .btn {
   -webkit-box-flex: 0;
@@ -473,6 +475,27 @@ a.color-white:hover {
 }
 .slick-dots li button {
   display: none;
+}
+
+.form-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.form-group label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 15px 20px 0;
+}
+.form-group label:last-child {
+  margin: 0 0 20px;
 }
 
 .label-checkbox {

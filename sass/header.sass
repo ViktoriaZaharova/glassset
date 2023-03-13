@@ -1,4 +1,3 @@
-@import "fonts"
 @import "vars"
 
 // header
@@ -20,11 +19,11 @@ header
 	&-icon
 		@include d-flex
 		max-width: 56px
-		margin: 0 7px 0 0	
+		margin: 0 7px 0 0
 
 .header-top
 	padding: 22px 0 18px
-	
+
 .form-search
 	display: flex
 	align-items: start
@@ -45,7 +44,9 @@ header
 		right: 0
 		top: 0
 		&:hover
-			background: $accent	
+			background: $accent
+	input
+		padding: 0 40px 0 16px		
 
 .messengers-box
 	font-size: 12px
@@ -95,14 +96,43 @@ header
 
 .phone
 	font-size: 16px
-	margin: 5px 0 0		
+	margin: 5px 0 0
 
 .header-bottom
-	border-top: 1px solid #AAAAAA	
+	border-top: 1px solid #AAAAAA
 	padding: 20px 0 15px
+	.form-search
+		display: none
+		width: calc(100% - 30px)
+	&__close
+		display: none
+		align-items: center
+		justify-content: center
+		width: 25px
+		height: 25px
+		position: absolute
+		right: 10px
+		top: 37px
+		&::before, &:after
+			content: ''
+			position: absolute
+			left: 12px
+			top: 0
+			width: 2px
+			height: 100%
+			background: $accent
+		&::before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(135deg)
+	.messengers-box, .header-box
+		display: none
+		order: inherit
+		margin: 0 0 20px
+		width: 100%
 
 .nav-menu
-	margin: 0 auto 
+	margin: 0 auto
 
 .menu
 	display: flex
@@ -110,6 +140,8 @@ header
 	flex-wrap: wrap
 	font-size: 16px
 	font-weight: 600
+	.menu-item-catalog
+		display: none
 	li
 		margin: 0 52px 0 0
 		&:last-child
@@ -135,7 +167,7 @@ header
 		padding: 5px 15px
 		width: 100%
 		&:hover
-			background: $light-grey	
+			background: $light-grey
 
 .btn-catalog
 	text-transform: uppercase
@@ -157,5 +189,32 @@ header
 			height: 2px
 			background: #fff
 
-
+.btn-burger
+	width: 24px
+	min-width: 24px
+	margin: 0 0 0 20px
+	display: none
+	cursor: pointer
+	order: 2
+	position: relative
+	span
+		display: block
+		width: 100%
+		height: 2px
+		border-radius: 2px
+		background: $accent	
+		margin: 0 0 4px
+		transition: .3s ease
+		&:last-child
+			margin: 0
+	&.click
+		span
+			position: absolute
+			&:first-child
+				transform: rotate(45deg)
+			&:last-child
+				transform: rotate(135deg)	
+			&:nth-child(2)
+				width: 0
+						
 // header end

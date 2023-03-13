@@ -192,6 +192,8 @@
 		margin: 0 auto
 		font-size: 16px
 		font-weight: 500
+		min-height: 40px
+		max-height: 40px
 		color: #000
 		&:hover
 			color: $accent
@@ -199,6 +201,7 @@
 		margin: 25px auto 0
 		justify-content: center
 		align-items: center
+		flex-wrap: nowrap
 	.btn
 		width: fit-content
 		padding: 0 27px
@@ -318,6 +321,8 @@
 		line-height: 24px
 		max-width: 225px
 		margin: 0 0 53px
+		&:hover
+			color: $accent
 	.btn
 		margin: auto 0 0
 		padding: 0 40px
@@ -446,6 +451,7 @@
 		height: 100%
 		color: #000
 		text-align: left
+		overflow: hidden
 	h3
 		font-size: 20px
 		font-weight: 600
@@ -639,7 +645,7 @@
 .consent
 	margin: 20px auto 0
 	text-align: center
-	max-width: 300px
+	max-width: 275px
 	width: 100%
 	font-size: 10px
 	font-weight: 500

@@ -7,74 +7,47 @@ $('.home-slider').slick({
 	arrows: false,
 	swipe: false,
 	pauseOnHover: false,
-	// autoplay: true,
-	// autoplaySpeed: 4000,
-	// asNavFor: '.home-navigation-slider',
 });
 
-
-
-$(document).ready(function () {
-	var time = 2;
-	var $bar,
-		$slick,
-		isPause,
-		tick,
-		percentTime;
-
-	$slick = $('.home-navigation-slider');
-	$slick.slick({
-		draggable: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		focusOnSelect: true,
-		arrows: false,
-		asNavFor: '.home-slider',
-		variableWidth: true,
-		// centerMode: true,
-		cssEase: 'linear',
-		speed: 2500,
-		pauseOnHover: false,
-	});
-
-	$bar = $('.slider-progress .progress');
-	$barRound = $('.progress');
-
-	$('.home-navigation').on({
-		mouseenter: function () {
-			isPause = true;
+$('.home-navigation-slider').slick({
+	draggable: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	focusOnSelect: true,
+	arrows: false,
+	asNavFor: '.home-slider',
+	variableWidth: true,
+	cssEase: 'linear',
+	speed: 2000,
+	pauseOnHover: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				variableWidth: false,
+				speed: 700,
+			}
 		},
-		mouseleave: function () {
-			isPause = false;
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				variableWidth: false,
+				speed: 700,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: false,
+				speed: 700,
+			}
 		}
-	});
-
-	// function startProgressbar() {
-	// 	resetProgressbar();
-	// 	percentTime = 0;
-	// 	isPause = false;
-	// 	tick = setInterval(interval, 20);
-	// }
-	// function interval() {
-	// 	percentTime += 1 / (time + 0.1);
-	// 	$bar.css({
-	// 		width: percentTime + '%'
-	// 	});
-
-	// 	if (percentTime >= 100) {
-	// 		$slick.slick('slickNext');
-	// 		startProgressbar();
-	// 	}
-	// }
-
-	// function resetProgressbar() {
-	// 	$bar.css({
-	// 		width: 0 + '%'
-	// 	});
-	// 	clearTimeout(tick);
-	// }
-	// startProgressbar();
+	]
 });
+
 
 $('.product-card-slider').slick({
 	slidesToShow: 1,
@@ -86,6 +59,20 @@ $('.news-slider').slick({
 	slidesToShow: 3,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 $('.reviews-video-slider').slick({
@@ -93,6 +80,20 @@ $('.reviews-video-slider').slick({
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 $('.reviews-slider').slick({
@@ -100,6 +101,14 @@ $('.reviews-slider').slick({
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 $('.best-offers-slider').slick({
@@ -107,22 +116,27 @@ $('.best-offers-slider').slick({
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev2"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next2"></use></svg></button>',
 	swipe: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
-// $('.best-offers-slider2').slick({
-// 	slidesToShow: 4,
-// 	// appendArrows: '.best-offers-slider-nav2',
-// 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev2"></use></svg></button>',
-// 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next2"></use></svg></button>',
-// 	swipe: false,
-// });
-// $('.best-offers-slider3').slick({
-// 	slidesToShow: 4,
-// 	// appendArrows: '.best-offers-slider-nav3',
-// 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev2"></use></svg></button>',
-// 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next2"></use></svg></button>',
-// 	swipe: false,
-// });
-
 // sliders end
 
 
@@ -140,5 +154,17 @@ $(window).scroll(function () {
 		$('header').removeClass('fixed');
 	}
 });
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+	$(this).toggleClass('click');
+	$('.header-bottom').fadeToggle();
+});
+
+$('.header-bottom').on('click', function () {
+	$('.header-bottom').fadeOut();
+	$('.btn-burger').removeClass('click');
+});
+
 
 new WOW().init();
