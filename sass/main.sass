@@ -49,7 +49,6 @@
 // 	.home-slider-item
 // 		height: 100%	
 
-
 .home-navigation
 	position: absolute
 	bottom: 83px
@@ -76,12 +75,11 @@
 				opacity: 1
 				pointer-events: auto
 
-
 .home-navigation-slider-item
 	width: 214px
 	will-change: width
 	// width: 214px
-	
+
 	height: 100%
 	border-radius: 5px
 	position: relative
@@ -654,17 +652,725 @@
 
 .page
 	h1
-		margin: 0 0 20px	
+		margin: 0 0 50px
 
 // page-catalog	
 .page-catalog
-	margin: 0 0 80px	
+	margin: 0 0 80px
 // page-catalog end	
 
 // page category	
 .page-category
 	margin: 0 0 52px
-
-
-		
 // page category end	
+
+// page-contacts	
+.nav-tabs-contacts
+	width: fit-content
+	margin: 0 0 35px
+	border-bottom: 1px solid #C1C1C1
+	.nav-link
+		font-size: 20px
+		font-weight: 500
+		padding: 15px 45px
+	.nav-item
+		margin: 0
+
+.tab-content-contacts
+	position: relative
+	width: 100%
+	margin: 0
+
+.map-contacts
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+	iframe
+		width: 100%
+		height: 100%
+
+.contacts-wrapper
+	margin: 111px 0 120px
+	background: #fff
+	width: 100%
+	max-width: 380px
+	box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05)
+	border-radius: 5px
+	padding: 30px 35px 35px
+	position: relative
+	z-index: 2
+
+.contacts-box
+	margin: 0 0 27px
+	&:last-child
+		margin: 0
+	&__title
+		width: 100%
+		margin: 0 0 6px
+		color: #808191
+	&__body
+		font-weight: 500
+		color: #000
+		a
+			color: #000
+			&:hover
+				color: $accent
+// page-contacts	end
+
+// about page	
+.page-about
+	margin: 0 0 90px
+	.about-image
+		width: 100%
+		border-radius: 0
+		img
+			border-radius: 0
+
+.about-in-number
+	margin: 60px auto 0
+	text-align: center
+	font-size: 24px
+	font-weight: 600
+	span
+		text-transform: uppercase
+	p
+		color: $accent
+		font-size: 60px
+		line-height: 1
+
+.mission
+	padding: 74px 0 0
+	background: #FAFAFA
+	h2
+		margin: 0 0 40px
+
+.about-video
+	position: relative
+	width: 100%
+	img
+		width: 100%
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		background: url('../img/play.svg') no-repeat center
+		background-size: cover
+		width: 100px
+		height: 100px
+
+.why-us
+	position: relative
+	z-index: 1
+	padding: 123px 0
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		height: 100%
+		width: 894px
+		background: url('../img/why-bg.svg') no-repeat right center
+		background-size: cover
+		left: 0
+		top: 0
+	.h3
+		text-transform: uppercase
+		text-align: center
+		max-width: 290px
+		margin: 0 auto
+		font-size: 40px
+		font-weight: 600
+		color: $accent
+
+.why-us-box
+	margin: 0 0 55px
+	text-align: center
+	font-size: 24px
+	font-weight: 500
+	&__icon
+		margin: 0 auto 18px
+		background: $accent
+		width: 90px
+		height: 90px
+		border-radius: 5px
+		margin: 0 auto 18px
+		@include d-flex
+
+.team
+	margin: 74px 0 114px
+
+.team-card
+	width: 100%
+	text-align: center
+	&__name
+		font-size: 20px
+		font-weight: 600
+	&__position
+		color: #BCBCBC
+		margin: 5px auto 0
+		max-width: 170px
+		font-size: 14px
+	&__photo
+		width: 100%
+		border-radius: 5px
+		margin: 0 auto 17px
+		height: 388px
+		img
+			width: 100%
+			max-height: 100%
+			border-radius: 5px
+			filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.05))
+
+// about page end	
+
+// suppliers page
+.page-suppliers
+	margin: 0 0 60px
+	h1
+		margin: 0 0 30px
+	.box-text
+		line-height: 22px
+	.list-dots
+		padding: 0 0 0 20px
+
+.callback-v2
+	background: url('../img/callback-bg2.jpg') no-repeat center
+	background-size: cover
+	padding: 40px 0 56px
+	h2
+		margin: 0 0 40px
+		font-size: 40px
+		font-weight: 500
+	.form-callback
+		max-width: 620px
+		.w50
+			width: calc(50% - 10px)
+		.label-file
+			width: 100%
+			justify-content: flex-end
+			margin: 0 0 20px auto
+			width: fit-content
+		textarea
+			height: 130px
+
+.label-file
+	color: #fff
+	display: flex
+	align-items: center
+	font-size: 14px
+	cursor: pointer
+	width: fit-content
+	&__icon
+		@include d-flex
+		width: 14px
+		height: 15px
+		fill: #fff
+		margin: 0 0 0 5px
+	input
+		display: none
+
+// suppliers page end
+
+// delivery	
+.page-payments
+	margin: 0 0 36px
+	h1
+		margin: 0 0 50px
+	ul
+		margin: 0 0 20px
+	.box-text
+		max-width: 809px
+
+.delivery
+	margin: 0 0 100px
+	h2
+		margin: 0 0 30px
+
+.delivery-content
+	h3
+		margin: 0 0 20px
+		font-size: 20px
+		font-weight: 600
+
+.delivery-box
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
+	background: #fff
+	max-width: 420px
+	width: 100%
+	border-radius: 5px
+	margin: -70px 0 0 auto
+	padding: 34px 50px 25px 38px
+	&__title
+		margin: 0 0 23px
+		font-size: 20px
+		font-weight: 600
+		color: $accent
+	ul
+		text-transform: uppercase
+		line-height: 30px
+// delivery end	
+
+// page-news	
+.page-news
+	margin: 0 0 100px
+	h1
+		margin: 0 0 40px
+
+.sales-card
+	width: 100%
+	height: 100%
+	background: #fff
+	border-radius: 5px
+	&__image
+		width: 100%
+		height: 276px
+		position: relative
+		border-radius: 5px 5px 0px 0px
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			border-radius: 5px 5px 0px 0px
+			width: 100%
+			height: 100%
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+		img
+			border-radius: 5px 5px 0px 0px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.date
+		position: absolute
+		right: 0
+		top: 0
+		background: #fff
+		border-radius: 0px 5px 0px 0px
+		padding: 5px 17px
+		font-size: 14px
+		color: #000
+	&__body
+		width: 100%
+		height: calc(100% - 276px)
+		padding: 25px 20px 15px
+		display: flex
+		flex-direction: column
+	&__title
+		margin: 0 0 30px
+		color: #000000
+		font-size: 20px
+		font-weight: 600
+		max-width: 360px
+		&:hover
+			color: $accent
+	.box-text
+		margin: 0 0 44px
+
+.sales-card-link
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 14px 0 0
+	border-top: 1px solid #E1E1E1
+	color: #000000
+	font-size: 14px
+	font-weight: 500
+	margin: auto 0 0
+	&:hover
+		color: $accent
+	&__icon
+		fill: none
+		width: 16px
+		height: 16px
+		stroke: #999999
+
+.recommended-product
+	margin: 0 0 100px
+	.nav-tabs
+		margin: 0 0 30px
+		width: 100%
+
+.product-card-recommended
+	width: 100%
+	height: 100%
+	text-align: center
+	background: #fff
+	padding: 14px 13px 23px
+	color: #000
+	.product-card__title
+		max-width: 220px
+		margin: 0 auto
+		display: block
+		min-height: auto
+		max-height: none
+	.product-card__img
+		height: 270px
+		margin: 0 auto 18px
+// page-news	end
+
+// page article	
+.recommended-product
+	margin: 0
+	background: #FAFAFA
+	padding: 40px 0
+
+.page-article
+	margin: 0 0 70px
+
+.link-grey
+	font-weight: 500
+	color: #A3A3A3
+	&:hover
+		color: $accent
+
+.link-all-news
+	margin: 17px 0 0
+
+.article-image
+	width: 100%
+	filter: drop-shadow(0px 15px 45px rgba(0, 0, 0, 0.05))
+	border-radius: 5px
+	img
+		border-radius: 5px
+
+.article-date
+	margin: 23px 0 0
+
+.article-description
+	margin: 35px 0 56px
+	font-size: 20px
+	font-weight: 500
+
+.article-box
+	margin: 0 0 55px
+	&:last-child
+		margin: 0
+	h3
+		margin: 0 0 40px
+		font-size: 30px
+		font-weight: 600
+	.box-text
+		margin: 0 0 30px
+	ul
+		padding: 0 0 0 20px
+		li
+			margin: 0 0 6px
+			&:last-child
+				margin: 0
+// page article end	
+
+// product page	
+.page-product
+	margin: 0 0 60px
+	h1
+		font-size: 30px
+		font-weight: 500
+		margin: 0
+
+.article-product
+	color: #ABABAB
+
+.link-print
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin: 0 0 0 auto
+	color: #ABABAB
+	font-size: 14px
+	&:hover
+		color: $accent
+	&__icon
+		@include d-flex
+		width: 18px
+		min-width: 18px
+		height: 18px
+		margin: 0 0 0 7px
+		fill: none
+		stroke: #ABABAB
+
+.availability
+	margin: 0 0 30px
+
+.form-order
+	button
+		margin: 29px 0 0
+		padding: 0 55px
+
+.form-order-box
+	width: 100%
+	margin: 0 0 16px
+	&:last-child
+		margin: 0
+	&__title
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		margin: 0 0 14px
+		color: #ABABAB
+		font-size: 14px
+	.tooltip-wrapper
+		margin: 0 0 0 2px
+
+.product-info
+	padding: 0 0 0 25px
+
+.product-slider
+	&__item
+		width: 100%
+		height: 530px
+		@include d-flex
+		border: 1px solid rgba(0, 0, 0, 0.2)
+		border-radius: 5px
+		img
+			border-radius: 5px
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.product-slider-preview
+	height: 100%
+	&__item
+		width: 100%
+		@include d-flex
+		border: 1px solid rgba(0, 0, 0, 0.2)
+		border-radius: 5px
+		cursor: pointer
+		img
+			border-radius: 5px
+	.slide
+		margin: 0 0 20px
+
+.nav-tabs-product
+	width: 100%
+	margin: 0 0 30px
+	.nav-link
+		font-size: 16px
+		font-weight: 600
+		padding: 0 15px 20px
+
+.video-box
+	width: 100%
+	position: relative
+	padding-bottom: 56.25%
+	iframe
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+// product page end	
+
+// page-basket
+.page-basket
+	margin: 0 0 80px
+	h1, h2, .h2
+		font-size: 24px
+		font-weight: 500
+		margin: 0
+		width: 100%
+
+.basket-title
+	width: 100%
+	background: #FAFAFA
+	border-radius: 5px
+	padding: 16px 40px
+
+.basket-card
+	width: 100%
+	padding: 30px 0 35px 40px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	border-bottom: 1px solid rgba(186, 186, 186, 0.5)
+	&:last-child
+		border: none
+	&__photo
+		width: 112px
+		height: 112px
+		@include d-flex
+		border: 0.5px solid #D0D0D0
+		border-radius: 5px
+		img
+			border-radius: 5px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		padding: 0 0 0 65px
+		width: 385px
+		color: #000
+		font-size: 20px
+		font-weight: 500
+		&:hover
+			color: $accent
+	&__value
+		width: calc(100% - 112px - 385px - 100px)
+	&__clear
+		width: 100px
+
+.btn-delete
+	@include d-flex
+	width: 22px
+	height: 22px
+	min-width: 22px
+	fill: #BABABA
+	margin: 0 0 0 auto
+
+.amount
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 120px
+	height: 40px
+	border: 0.5px solid #ABABAB
+	border-radius: 5px
+	padding: 0 10px
+	margin: 0 auto
+	input
+		height: 40px
+		padding: 0
+		text-align: center
+		border: none
+		border-radius: 0
+		font-size: 20px
+		font-weight: 500
+		color: #000
+		background: transparent
+	span
+		display: block
+		cursor: pointer
+		font-size: 20px
+		font-weight: 500
+
+.form-basket
+	[type="submit"]
+		max-width: 420px
+		width: 100%
+		margin: 0 auto
+		padding: 0 20px
+	.consent
+		max-width: 411px
+		margin: 17px auto 0
+		color: #ABABAB
+		line-height: 19px
+		font-size: 16px
+
+.form-basket-box
+	width: 100%
+	.basket-body
+		padding: 0 36px
+	.nav-tabs-contacts
+		width: 100%
+		margin: 0	0 30px
+		.nav-link
+			padding: 0 20px 10px
+			text-align: center
+			width: 100%
+		.nav-item
+			flex: 1
+	.label-file
+		margin: 7px 0 0 auto
+	.label-file-requisites
+		margin: 25px 0 0
+	.label-radio
+		font-size: 16px
+		font-weight: 500
+		&:last-child
+			margin: 15px 0 0
+	.label-radio-delivery
+		font-size: 10px
+		.radio-text
+			margin: 2px 0 0
+	.mt-30
+		margin-top: 30px
+
+.label-file-requisites
+	padding: 10px 17px
+	border: 1px solid #E3E3E3
+	border-radius: 5px
+
+.label-file-black
+	color: #000
+	.label-file__icon
+		fill: #000
+
+.label-radio-black
+	color: #000
+	.radio-custom
+		border: 1px solid #A4A4A4
+		border-radius: 50%
+		position: relative
+		margin: 0 17px 0 0
+		width: 18px
+		height: 18px
+		min-width: 18px
+		&::before
+			content: ''
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			background: #A4A4A4
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			position: absolute
+	.inp-radio:checked ~ .radio-custom
+		border-color: $accent
+		&::before
+			background: $accent
+
+.tab-content-basket
+	>.js-tab-content
+		display: none
+		&.active
+			display: block
+
+.label-radio-delivery
+	width: 100%
+	height: 100%
+	flex-direction: column
+	align-items: center
+	text-align: center
+	position: relative
+	z-index: 1
+	padding: 10px
+	font-size: 10px
+	cursor: pointer
+	.tooltip-wrapper
+		top: 3px
+		right: 5px
+		position: absolute
+		z-index: 2
+		text-align: left
+	input
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		padding: 0
+		background: transparent
+		width: 100%
+		height: 100%
+		border-radius: 5px
+		border: 0.698106px solid #E3E3E3
+		z-index: 1
+		&:checked
+			border: 1px solid #D60000
+	.radio-title
+		margin: 10px auto 0
+		font-size: 13px
+		font-weight: 600
+
+.label-radio__image
+	@include d-flex
+	height: 67px
+	margin: 0 auto auto
+	img
+		max-height: 100%
+// page-basket end

@@ -137,8 +137,131 @@ $('.best-offers-slider').slick({
 		}
 	]
 });
+
+$('.team-slider').slick({
+	slidesToShow: 4,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	swipe: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.recommended-product-slider').slick({
+	slidesToShow: 4,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	swipe: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.product-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+});
+
+$('.product-slider-preview').slick({
+	slidesToShow: 5,
+	arrows: false,
+	vertical: true,
+	verticalSwiping: true,
+	focusOnSelect: true,
+	asNavFor: '.product-slider',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		}
+	]
+});
 // sliders end
 
+// amount
+$('.down').on("click", function () {
+	var $input = $(this).parent().find('input');
+	var count = parseInt($input.val()) - 1;
+	count = count < 1 ? 1 : count;
+	$input.val(count);
+	$input.change();
+	return false;
+});
+$('.up').on("click", function () {
+	var $input = $(this).parent().find('input');
+	$input.val(parseInt($input.val()) + 1);
+	$input.change();
+	return false;
+});
+
+$(document).ready(function () {
+	$(".js-tab-trigger").click(function () {
+		var id = $(this).attr('data-tab'),
+			content = $('.js-tab-content[data-tab="' + id + '"]');
+
+		// $('.js-tab-trigger.active').removeClass('active'); // 1
+		// $(this).addClass('active'); // 2
+
+		$('.js-tab-content.active').removeClass('active'); // 3
+		content.addClass('active'); // 4
+	});
+});
 
 // slider in bootstrap tabs
 $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -161,7 +284,7 @@ $('.btn-burger').on('click', function () {
 	$('.header-bottom').fadeToggle();
 });
 
-$('.header-bottom').on('click', function () {
+$('.header-bottom__close').on('click', function () {
 	$('.header-bottom').fadeOut();
 	$('.btn-burger').removeClass('click');
 });

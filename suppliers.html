@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Гласскомплект</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header>
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex align-items-center flex-wrap">
+
+
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo-icon.svg" alt=""></span>
+								<span class="logo-text"><img src="img/logo-text.svg" alt=""></span>
+							</a>
+
+							<form method="post" class="form-search">
+								<label><input type="text" placeholder="Поиск по товарам" name="search"></label>
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+							</form>
+
+							<div class="messengers-box">
+								<ul class="list-messengers my-ul">
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+								</ul>
+								<p>Напишите нам</p>
+							</div>
+
+							<a href="basket.html" class="basket-link">
+								<span class="basket-link__icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+								</span>
+								<span class="basket-link__val">3</span>
+							</a>
+
+							<div class="header-box">
+								<a href="mailto:217-340@steklo58.ru" class="mail">217-340@steklo58.ru</a>
+								<a href="tel:+79677017340" class="phone color-accent">+7 (967) 701-73-40</a>
+							</div>
+
+							<div class="btn-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="header-bottom__close"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex align-items-center flex-wrap">
+
+							<a href="#" class="btn btn-accent btn-md btn-catalog">
+								<span class="btn-catalog__icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+								<span class="btn-catalog__text">Каталог</span>
+							</a>
+
+							<form method="post" class="form-search">
+								<label><input type="text" placeholder="Поиск по товарам" name="search"></label>
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+							</form>
+
+							<nav class="nav-menu">
+								<ul class="menu my-ul">
+									<li class="menu-item-catalog"><a href="catalog.html" class="nav-link">Каталог</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Как купить</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+										</div>
+									</li>
+									<li><a href="suppliers.html" class="nav-link">Поставщикам</a></li>
+									<li><a href="news.html" class="nav-link">Новости и акции</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">О компании</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+										</div>
+									</li>
+									<li><a href="contacts.html" class="nav-link">Контакты</a></li>
+								</ul>
+							</nav>
+
+							<div class="messengers-box">
+								<ul class="list-messengers my-ul">
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+								</ul>
+								<p>Напишите нам</p>
+							</div>
+
+							<div class="header-box">
+								<a href="mailto:217-340@steklo58.ru" class="mail">217-340@steklo58.ru</a>
+								<a href="tel:+79677017340" class="phone color-accent">+7 (967) 701-73-40</a>
+							</div>
+
+
+							<a href="#" class="btn btn-md btn-border-accent" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Обратный звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-suppliers">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav aria-label="breadcrumb" class="nav-breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Поставщикам</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="col-12">
+						<h1>Поставщикам</h1>
+					</div>
+
+					<div class="col-12">
+						<div class="box-text">
+							<p>Компания «ГлассКомплект» подготовила выгодные условия для производителей мебели и частных
+								предпринимателей. Для того,
+								чтобы получить информацию об условиях сотрудничества, просим Вас заполнить соответствующую информацию в
+								форме
+								регистрации. После этого в самое ближайшее время с Вами свяжется менеджер для установления размера
+								скидки.</p>
+
+							<p>Работа через интернет-магазин позволяет производителям мебели получить целый ряд выгод:</p>
+							<ul class="my-ul list-dots-my">
+								<li>До 6% бонусов за заказ всех групп товаров для владельцев бонусных карт.</li>
+								<li>Возможность узнать розничную и оптовую цену, с учетом персональной скидки, на весь ассортимент 24
+									часа в
+									сутки, 7 дней в
+									неделю.</li>
+								<li>Возможность сформировать заказ 24/7 с любого устройства, в любом месте.</li>
+								<li>Простой доступ к истории заказов и возможность повторить заказ в 1 клик.</li>
+								<li>Быстрый подбор комплектующих при помощи поиска по параметрам, калькуляторов и он-лайн конфигуратора.
+								</li>
+								<li>Всегда актуальная информация о новинках, специальных предложениях и акциях для наших партнеров.</li>
+								<li>Регулярные конкурсы с ценными призами.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="callback callback-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Есть для нас предложение?</h2>
+					</div>
+
+					<div class="col-12">
+						<form method="post" class="form-callback">
+							<label class="w50">
+								<input type="text" placeholder="Имя" name="name">
+							</label>
+							<label class="w50">
+								<input type="text" placeholder="Компания" name="company" required>
+							</label>
+							<label class="w50">
+								<input type="text" placeholder="Email" name="mail">
+							</label>
+							<label class="w50">
+								<input type="text" placeholder="Телефон" name="phone" required>
+							</label>
+							
+							<label class="w100">
+								<textarea name="message" placeholder="Сообщение"></textarea>
+							</label>
+
+							<div class="w100">
+								<label class="label-file">
+									<input type="file" name="file">
+									<span class="label-file__text">Прикрепить файл</span>
+									<span class="label-file__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#file"></use>
+									</svg></span>
+								</label>
+							</div>
+
+							<div class="w100">
+								<button type="submit" class="btn btn-accent">Отправить</button>
+							</div>
+						
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-start">
+						<a href="index.html" class="logo">
+							<span class="logo-text"><img src="img/logo-text.svg" alt=""></span>
+						</a>
+
+						<ul class="footer-menu my-ul">
+							<li><a href="suppliers.html">Поставщикам</a></li>
+							<li><a href="news.html">Новости и акции</a></li>
+						</ul>
+						<ul class="footer-menu my-ul">
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="delivery.html">Оплата и доставка</a></li>
+						</ul>
+						<ul class="footer-menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="#">Реквизиты</a></li>
+						</ul>
+
+						<div class="footer-box">
+							<div class="address">440047, Россия, ул. Аустрина, д. 63</div>
+							<a href="mailto:217-340@steklo58.ru">217-340@steklo58.ru</a>
+						</div>
+
+						<div class="footer-box">
+							<p>Отдел менеджеров:</p>
+							<a href="tel:+79677017340">+7 (967) 701-73-40</a>
+						</div>
+
+						<ul class="list-messengers my-ul">
+							<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Оставить отзыв</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Пожалуйста, поделитесь своими впечатлениями о компании или преобретенной продукции.</p>
+					</div>
+
+					<form method="post" class="form-callback">
+						<label>
+							<input type="text" placeholder="Имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="Должность" name="position">
+						</label>
+						<label>
+							<input type="text" placeholder="Название компании" name="name_company">
+						</label>
+						<label class="w100">
+							<textarea name="message" placeholder="Отзыв"></textarea>
+						</label>
+
+						<button type="submit" class="btn btn-accent">Отправить</button>
+						<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Обратный звонок</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text text-center theme-appeals">
+						<p>Выберите тему обращения:</p>
+					</div>
+
+					<form method="post" class="form-callback">
+						<div class="form-group">
+							<label class="label-radio">
+								<input type="radio" class="inp-radio" name="radio" checked>
+								<span class="radio-custom"></span>
+								<span class="radio-text">Продукция</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" class="inp-radio" name="radio">
+								<span class="radio-custom"></span>
+								<span class="radio-text">Сотрудничество</span>
+							</label>
+						</div>
+
+						<label>
+							<input type="text" placeholder="Имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="Телефон" name="phone" required>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить</button>
+						<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

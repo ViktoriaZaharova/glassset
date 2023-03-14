@@ -67,6 +67,28 @@
   footer .list-messengers {
     margin: 0;
   }
+  .why-us-box {
+    font-size: 20px;
+    margin: 0 0 30px;
+  }
+  .team-slider .slick-arrow svg {
+    stroke: #fff;
+  }
+  .team-slider .slick-prev {
+    left: 0;
+  }
+  .team-slider .slick-next {
+    right: 0;
+  }
+  .delivery-box {
+    max-width: 350px;
+  }
+  .recommended-product-slider .slick-prev {
+    left: 0;
+  }
+  .recommended-product-slider .slick-next {
+    right: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .menu {
@@ -227,6 +249,87 @@
     margin: 0;
     max-width: none;
   }
+  .page-about .about-image {
+    margin: 0;
+  }
+  .page h1 {
+    margin: 0 0 30px;
+  }
+  .mission {
+    padding: 50px 0 0;
+  }
+  .mission h2 {
+    margin: 0 0 30px;
+  }
+  .about-video {
+    margin: 30px 0 0;
+  }
+  .why-us {
+    padding: 70px 0;
+  }
+  .why-us::before {
+    width: 100%;
+  }
+  .why-us .h3 {
+    margin: 0 auto 20px;
+    max-width: none;
+    font-size: 40px;
+  }
+  .team-card__photo {
+    height: auto;
+  }
+  .delivery-box {
+    margin: 30px auto 0;
+    max-width: none;
+    padding: 20px;
+  }
+  .delivery-box__title {
+    font-size: 18px;
+  }
+  .delivery {
+    margin: 0 0 50px;
+  }
+  .delivery-content h3 {
+    font-size: 18px;
+  }
+  .page-article .about-video {
+    margin: 0 0 20px;
+  }
+  .breadcrumb {
+    line-height: normal;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    margin: 0 10px;
+  }
+  .link-print {
+    margin: 0 0 10px;
+  }
+  .product-slider-preview {
+    margin: 20px 0 0;
+  }
+  .product-slider-preview .slide {
+    margin: 0;
+  }
+  .product-slider__item {
+    height: 400px;
+  }
+  .product-info {
+    padding: 0;
+    margin: 30px 0 0;
+  }
+  .page-basket h1, .page-basket h2, .page-basket .h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .basket-title {
+    padding: 10px 20px;
+  }
+  .basket-card {
+    padding: 20px 0;
+  }
+  .form-basket-box .basket-body {
+    padding: 0 20px;
+  }
 }
 @media only screen and (max-width: 850px) {
   .home-navigation-slider-item .box-text {
@@ -287,6 +390,72 @@
   .callback .box-text {
     font-size: 18px;
     margin: 20px auto 30px;
+  }
+  .about-in-number {
+    margin: 30px auto 0;
+    font-size: 20px;
+  }
+  .about-in-number p {
+    font-size: 40px;
+  }
+  .page-about {
+    margin: 0 0 50px;
+  }
+  .team {
+    margin: 50px 0 60px;
+  }
+  .recommended-product, .page-news, .page-article {
+    margin: 0 0 50px;
+  }
+  .sales-card__title {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+  .sales-card__body {
+    padding: 15px;
+  }
+  .sales-card .box-text {
+    margin: 0 0 20px;
+  }
+  .recommended-product-v2 {
+    margin: 0;
+  }
+  .article-box {
+    margin: 0 0 30px;
+  }
+  .article-box h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  .article-description {
+    font-size: 18px;
+    margin: 20px 0 30px;
+  }
+  .page-product {
+    margin: 0 0 50px;
+  }
+  .form-order button {
+    margin: 20px 0 0;
+  }
+  .product-slider__item {
+    height: 300px;
+  }
+  .basket-card__title {
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    width: 280px;
+  }
+  .basket-card__value {
+    width: calc(100% - 70px - 280px - 112px);
+  }
+  .basket-card__clear {
+    width: 70px;
+  }
+  .page-basket {
+    margin: 0 0 50px;
+  }
+  .mb-70 {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -388,6 +557,77 @@
   .nav-breadcrumb {
     margin: 20px 0;
   }
+  .contacts-wrapper {
+    max-width: none;
+    padding: 20px;
+    margin: 0 0 20px;
+  }
+  .contacts-box {
+    margin: 0 0 20px;
+  }
+  .contacts-box:last-child {
+    margin: 0;
+  }
+  .map-contacts {
+    position: relative;
+    height: 300px;
+  }
+  .about-video::before {
+    width: 70px;
+    height: 70px;
+  }
+  .why-us {
+    padding: 50px 0 30px;
+  }
+  .why-us .h3 {
+    font-size: 30px;
+  }
+  .why-us-box {
+    font-size: 16px;
+  }
+  .why-us-box__icon {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+  }
+  .delivery-box__title {
+    margin: 0 0 15px;
+  }
+  .nav-tabs-contacts .nav-item {
+    margin: 0;
+  }
+  .nav-tabs-contacts .nav-link {
+    padding: 5px 10px;
+  }
+  .basket-card {
+    position: relative;
+  }
+  .basket-card__photo {
+    margin: 0 auto;
+  }
+  .basket-card__title {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .basket-card__value {
+    width: 100%;
+  }
+  .basket-card__clear {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .form-basket-box .basket-body {
+    padding: 0;
+  }
+  .label-radio__image {
+    height: 50px;
+  }
+  .page-basket h1, .page-basket h2, .page-basket .h2 {
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo-icon {
@@ -451,6 +691,21 @@
     width: 30px;
     height: 30px;
     font-size: 14px;
+  }
+  .about-in-number {
+    font-size: 16px;
+  }
+  .about-in-number p {
+    font-size: 24px;
+  }
+  .callback-v2 .form-callback .w50 {
+    width: 100%;
+  }
+  .page-suppliers {
+    margin: 0 0 50px;
+  }
+  .page-suppliers h1 {
+    margin: 0 0 30px;
   }
 }
 @media only screen and (max-width: 420px) {

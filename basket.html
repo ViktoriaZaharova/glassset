@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Гласскомплект</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper bg-white">
+
+		<header>
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex align-items-center flex-wrap">
+
+
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo-icon.svg" alt=""></span>
+								<span class="logo-text"><img src="img/logo-text.svg" alt=""></span>
+							</a>
+
+							<form method="post" class="form-search">
+								<label><input type="text" placeholder="Поиск по товарам" name="search"></label>
+								<button type="submit">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+
+							<div class="messengers-box">
+								<ul class="list-messengers my-ul">
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+								</ul>
+								<p>Напишите нам</p>
+							</div>
+
+							<a href="basket.html" class="basket-link">
+								<span class="basket-link__icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+								</span>
+								<span class="basket-link__val">3</span>
+							</a>
+
+							<div class="header-box">
+								<a href="mailto:217-340@steklo58.ru" class="mail">217-340@steklo58.ru</a>
+								<a href="tel:+79677017340" class="phone color-accent">+7 (967) 701-73-40</a>
+							</div>
+
+							<div class="btn-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="header-bottom__close"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex align-items-center flex-wrap">
+
+							<a href="#" class="btn btn-accent btn-md btn-catalog">
+								<span class="btn-catalog__icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+								<span class="btn-catalog__text">Каталог</span>
+							</a>
+
+							<form method="post" class="form-search">
+								<label><input type="text" placeholder="Поиск по товарам" name="search"></label>
+								<button type="submit">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+
+							<nav class="nav-menu">
+								<ul class="menu my-ul">
+									<li class="menu-item-catalog"><a href="catalog.html" class="nav-link">Каталог</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Как купить</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+										</div>
+									</li>
+									<li><a href="suppliers.html" class="nav-link">Поставщикам</a></li>
+									<li><a href="news.html" class="nav-link">Новости и акции</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">О компании</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+											<a href="#" class="dropdowm-item">menu1</a>
+										</div>
+									</li>
+									<li><a href="contacts.html" class="nav-link">Контакты</a></li>
+								</ul>
+							</nav>
+
+							<div class="messengers-box">
+								<ul class="list-messengers my-ul">
+									<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+								</ul>
+								<p>Напишите нам</p>
+							</div>
+
+							<div class="header-box">
+								<a href="mailto:217-340@steklo58.ru" class="mail">217-340@steklo58.ru</a>
+								<a href="tel:+79677017340" class="phone color-accent">+7 (967) 701-73-40</a>
+							</div>
+
+
+							<a href="#" class="btn btn-md btn-border-accent" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Обратный звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-basket">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav aria-label="breadcrumb" class="nav-breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Корзина</li>
+							</ol>
+						</nav>
+					</div>
+
+				</div>
+
+				<div class="row align-items-center mb-20">
+					<div class="col-12">
+						<a href="#" class="link-print">
+							<span class="link-print__text">Версия для печати</span>
+							<span class="link-print__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#print"></use>
+								</svg></span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<form method="post" class="form-basket">
+							<div class="row mb-70">
+								<div class="col-12">
+									<div class="form-basket-box">
+										<div class="basket-title">
+											<h1>Ваш заказ</h1>
+										</div>
+
+										<div class="basket-card">
+											<a href="product.html" class="basket-card__photo"><img src="img/product-max.jpg" alt=""></a>
+											<a href="product.html" class="basket-card__title">Комплект фурнитуры для раздвижной стеклянной
+												двери</a>
+
+											<div class="basket-card__value">
+												<div class="amount">
+													<span class="down">-</span>
+													<input type="text" value="1" />
+													<span class="up">+</span>
+												</div>
+											</div>
+
+											<div class="basket-card__clear">
+												<a href="#" class="btn-delete">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#close"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+
+										<div class="basket-card">
+											<a href="product.html" class="basket-card__photo"><img src="img/product13.png" alt=""></a>
+											<a href="product.html" class="basket-card__title">Стеклорез профессиональный</a>
+
+											<div class="basket-card__value">
+												<div class="amount">
+													<span class="down">-</span>
+													<input type="text" value="1" />
+													<span class="up">+</span>
+												</div>
+											</div>
+
+											<div class="basket-card__clear">
+												<a href="#" class="btn-delete">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#close"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="basket-card">
+											<a href="product.html" class="basket-card__photo"><img src="img/product14.png" alt=""></a>
+											<a href="product.html" class="basket-card__title">Профессиональная жидкость для ручного раскроя
+												стекла</a>
+
+											<div class="basket-card__value">
+												<div class="amount">
+													<span class="down">-</span>
+													<input type="text" value="1" />
+													<span class="up">+</span>
+												</div>
+											</div>
+
+											<div class="basket-card__clear">
+												<a href="#" class="btn-delete">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#close"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="basket-card">
+											<a href="product.html" class="basket-card__photo"><img src="img/product11.jpg" alt=""></a>
+											<a href="product.html" class="basket-card__title">Лак Гласс-Тонер Стандарт</a>
+
+											<div class="basket-card__value">
+												<div class="amount">
+													<span class="down">-</span>
+													<input type="text" value="1" />
+													<span class="up">+</span>
+												</div>
+											</div>
+
+											<div class="basket-card__clear">
+												<a href="#" class="btn-delete">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#close"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mb-70">
+								<div class="col-12 col-lg-6 mb-30">
+									<div class="form-basket-box">
+										<div class="basket-title mb-30">
+											<div class="h2">Данные покупателя</div>
+										</div>
+										<ul class="nav nav-tabs nav-tabs-contacts" role="tablist">
+											<li class="nav-item" role="presentation">
+												<button class="nav-link active js-tab-trigger" data-tab="1" id="nav-tab5" data-bs-toggle="tab"
+													data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="true">
+													Юридическое лицо
+												</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link js-tab-trigger" id="nav-tab6" data-tab="2" data-bs-toggle="tab"
+													data-bs-target="#tab6" type="button" role="tab" aria-controls="tab6"
+													aria-selected="false">Физическое лицо
+												</button>
+											</li>
+										</ul>
+
+										<div class="basket-body">
+											<div class="tab-content tab-content-contacts">
+												<div class="tab-pane fade show active" id="tab5" role="tabpanel" aria-labelledby="nav-tab5">
+													<div class="row">
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="Название компании" name="name">
+															</label>
+														</div>
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="ИНН" name="inn">
+															</label>
+														</div>
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="Email" name="mail">
+															</label>
+														</div>
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="Телефон" name="phone">
+															</label>
+														</div>
+														<div class="col-12">
+															<label>
+																<textarea name="message" placeholder="Комментарий"></textarea>
+															</label>
+														</div>
+														<div class="col-12">
+															<label class="label-file label-file-black">
+																<input type="file" name="file">
+																<span class="label-file__text">Прикрепить файл</span>
+																<span class="label-file__icon"><svg class="svg-icon">
+																		<use xlink:href="img/sprite.svg#file"></use>
+																	</svg></span>
+															</label>
+														</div>
+													</div>
+												</div>
+
+												<div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="nav-tab6">
+													<div class="row">
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="Название компании" name="name">
+															</label>
+														</div>
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="ИНН" name="inn">
+															</label>
+														</div>
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="Email" name="mail">
+															</label>
+														</div>
+														<div class="col-12 col-lg-6 mb-20">
+															<label>
+																<input type="text" placeholder="Телефон" name="phone">
+															</label>
+														</div>
+														<div class="col-12">
+															<label>
+																<textarea name="message" placeholder="Комментарий"></textarea>
+															</label>
+														</div>
+														<div class="col-12">
+															<label class="label-file label-file-black">
+																<input type="file" name="file">
+																<span class="label-file__text">Прикрепить файл</span>
+																<span class="label-file__icon"><svg class="svg-icon">
+																		<use xlink:href="img/sprite.svg#file"></use>
+																	</svg></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-5 offset-lg-1 mb-30">
+									<div class="form-basket-box">
+										<div class="basket-title mb-30">
+											<div class="h2">Способ оплаты</div>
+										</div>
+										<div class="basket-body">
+											<div class="box-text">
+												<p>Мы выставляем Вам счет по Вашим реквизитам в письме на электронную почту.</p>
+											</div>
+											<div class="tab-content tab-content-contacts tab-content-basket">
+												<div class="tab-pane js-tab-content active" data-tab="1">
+													<label class="label-radio label-radio-black">
+														<input type="radio" class="inp-radio" name="radio" checked>
+														<span class="radio-custom"></span>
+														<span class="radio-text">Безналичный расчёт с НДС</span>
+													</label>
+													<label class="label-radio label-radio-black">
+														<input type="radio" class="inp-radio" name="radio">
+														<span class="radio-custom"></span>
+														<span class="radio-text">Безналичный расчет без НДС</span>
+													</label>
+													<label class="label-radio label-radio-black">
+														<input type="radio" class="inp-radio" name="radio">
+														<span class="radio-custom"></span>
+														<span class="radio-text">Перевод на банковскую карту</span>
+													</label>
+
+													<label class="label-file label-file-black label-file-requisites">
+														<input type="file" name="file">
+														<span class="label-file__text">Прикрепить реквизиты</span>
+														<span class="label-file__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#file"></use>
+															</svg></span>
+													</label>
+												</div>
+												<div class="tab-pane js-tab-content" data-tab="2">
+													<label class="label-radio label-radio-black">
+														<input type="radio" class="inp-radio" name="radio2" checked>
+														<span class="radio-custom"></span>
+														<span class="radio-text">Перевод по номеру карты</span>
+													</label>
+													<label class="label-radio label-radio-black">
+														<input type="radio" class="inp-radio" name="radio2">
+														<span class="radio-custom"></span>
+														<span class="radio-text">Наличный расчет</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mb-20">
+								<div class="col-12 col-lg-6 mb-30">
+									<div class="form-basket-box">
+										<div class="basket-title mb-30">
+											<div class="h2">Способ и адрес доставки</div>
+										</div>
+
+										<div class="basket-body">
+											<div class="box-text">
+												<p>Вы можете забрать заказ с нашего склада, либо воспользоваться услугами одной из транспортных
+													компаний (доставка до
+													терминала в г. Пенза бесплатная).</p>
+											</div>
+
+											<div class="row">
+												<div class="col-6 mb-20">
+													<label class="label-radio label-radio-delivery label-radio-black">
+														<input type="radio" class="inp-radio" name="radio3">
+														<span class="label-radio__image">
+															<img src="img/delivery1.svg" alt=""></span>
+														<span class="radio-title">Самовывоз</span>
+														<span class="radio-text">Предварительный расчёт</span>
+													</label>
+												</div>
+
+												<div class="col-6 mb-20">
+													<label class="label-radio label-radio-delivery label-radio-black">
+														<span class="tooltip-wrapper">
+															<span class="tooltip-btn"><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#question"></use>
+																</svg>
+															</span>
+															<span class="tooltip-box">
+																Грузы через ТК «ПЭК» и ТК «КИТ» отправляются только по четвергам
+															</span>
+														</span>
+
+														<input type="radio" class="inp-radio" name="radio3" checked>
+														<span class="label-radio__image">
+															<img src="img/delivery2.png" alt=""></span>
+														<span class="radio-title">ПЭК</span>
+													</label>
+												</div>
+
+												<div class="col-6 mb-20">
+													<label class="label-radio label-radio-delivery label-radio-black">
+														<input type="radio" class="inp-radio" name="radio3">
+														<span class="label-radio__image">
+															<img src="img/delivery3.png" alt=""></span>
+														<span class="radio-title">Байкал сервис</span>
+													</label>
+												</div>
+<div class="col-6 mb-20">
+	<label class="label-radio label-radio-delivery label-radio-black">
+		<input type="radio" class="inp-radio" name="radio3">
+		<span class="label-radio__image">
+			<img src="img/delivery4.png" alt=""></span>
+		<span class="radio-title">Деловые линии</span>
+	</label>
+</div>
+
+<div class="col-6 mb-20">
+	<label class="label-radio label-radio-delivery label-radio-black">
+		<span class="tooltip-wrapper">
+			<span class="tooltip-btn"><svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#question"></use>
+				</svg>
+			</span>
+			<span class="tooltip-box">
+				Грузы через ТК «ПЭК» и ТК «КИТ» отправляются только по четвергам
+			</span>
+		</span>
+
+		<input type="radio" class="inp-radio" name="radio3" checked>
+		<span class="label-radio__image">
+			<img src="img/delivery5.png" alt=""></span>
+		<span class="radio-title">КИТ</span>
+	</label>
+</div>
+<div class="col-6 mb-20">
+	<label class="label-radio label-radio-delivery label-radio-black">
+		<input type="radio" class="inp-radio" name="radio3">
+		<span class="label-radio__image">
+			<img src="img/delivery6.png" alt=""></span>
+		<span class="radio-title">СДЭК</span>
+	</label>
+</div>
+<div class="col-6 mb-20">
+	<label class="label-radio label-radio-delivery label-radio-black">
+		<input type="radio" class="inp-radio" name="radio3">
+		<span class="label-radio__image">
+			<img src="img/delivery7.svg" alt=""></span>
+		<span class="radio-title">СДЭК</span>
+	</label>
+</div>
+
+<div class="col-6 mb-20">
+	<label class="label-radio label-radio-delivery label-radio-black">
+		<input type="radio" class="inp-radio" name="radio3">
+		<span class="label-radio__image">
+			<img src="img/delivery8.png" alt=""></span>
+		<span class="radio-title">Энергия</span>
+	</label>
+</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="col-12 col-lg-5 offset-lg-1 mb-30">
+									<div class="form-basket-box">
+										<div class="basket-title mb-30">
+											<div class="h2">Способ оплаты</div>
+										</div>
+										<div class="basket-body">
+											<label class="mb-30">
+												<input type="text" placeholder="ФИО получателя в транспортной компании" name="name_company">
+											</label>
+											<label class="label-radio label-radio-black">
+												<input type="radio" class="inp-radio" name="radio4">
+												<span class="radio-custom"></span>
+												<span class="radio-text">Доставка до терминала в вашем городе</span>
+											</label>
+											<label class="label-radio label-radio-black">
+												<input type="radio" class="inp-radio" name="radio4" checked>
+												<span class="radio-custom"></span>
+												<span class="radio-text">Доставка по вашему адресу</span>
+											</label>
+
+											<label class="mt-30">
+												<input type="text" placeholder="Введите адрес" name="address">
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<button type="submit" class="btn btn-accent">Заказать</button>
+									<div class="consent">Отправляя форму, я даю согласие на обработку персональных данных.</div>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="recommended-product recommended-product-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul class="nav nav-tabs nav-tabs-contacts" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+									role="tab" aria-controls="tab1" aria-selected="true">
+									Рекомендуем
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+									role="tab" aria-controls="tab2" aria-selected="false">Предложение месяца
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="nav-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+									role="tab" aria-controls="tab3" aria-selected="false">Новинки
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="nav-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button"
+									role="tab" aria-controls="tab4" aria-selected="false">Акции
+								</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-12">
+						<div class="tab-content tab-content-contacts">
+							<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab1">
+								<div class="recommended-product-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product14.png" alt=""></span>
+											<span class="product-card__title">Профессиональная жидкость для ручного раскроя стекла</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product15.png" alt=""></span>
+											<span class="product-card__title">Петля Bella</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product10.jpg" alt=""></span>
+											<span class="product-card__title">Лак Гласс-Тонер Стандарт</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+								<div class="recommended-product-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product14.png" alt=""></span>
+											<span class="product-card__title">Профессиональная жидкость для ручного раскроя стекла</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product15.png" alt=""></span>
+											<span class="product-card__title">Петля Bella</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product10.jpg" alt=""></span>
+											<span class="product-card__title">Лак Гласс-Тонер Стандарт</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab3">
+								<div class="recommended-product-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product14.png" alt=""></span>
+											<span class="product-card__title">Профессиональная жидкость для ручного раскроя стекла</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product15.png" alt=""></span>
+											<span class="product-card__title">Петля Bella</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product10.jpg" alt=""></span>
+											<span class="product-card__title">Лак Гласс-Тонер Стандарт</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="nav-tab4">
+								<div class="recommended-product-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product14.png" alt=""></span>
+											<span class="product-card__title">Профессиональная жидкость для ручного раскроя стекла</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product15.png" alt=""></span>
+											<span class="product-card__title">Петля Bella</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product10.jpg" alt=""></span>
+											<span class="product-card__title">Лак Гласс-Тонер Стандарт</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card-recommended">
+											<span class="product-card__img"><img src="img/product13.png" alt=""></span>
+											<span class="product-card__title">Стеклорез профессиональный</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="callback">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Остались вопросы?</h2>
+						<div class="box-text">
+							<p>Оставьте ваши контактные данные и мы свяжимся с вами в течении получаса</p>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<form method="post" class="form-callback">
+							<label>
+								<input type="text" placeholder="Имя" name="name">
+							</label>
+							<label>
+								<input type="text" placeholder="Телефон" name="phone" required>
+							</label>
+							<label>
+								<input type="text" placeholder="Email" name="mail">
+							</label>
+							<label class="w100">
+								<input type="text" placeholder="Комментарий" name="comment">
+							</label>
+
+							<div class="w100">
+								<button type="submit" class="btn btn-accent">Отправить</button>
+							</div>
+							<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-start">
+						<a href="index.html" class="logo">
+							<span class="logo-text"><img src="img/logo-text.svg" alt=""></span>
+						</a>
+
+						<ul class="footer-menu my-ul">
+							<li><a href="suppliers.html">Поставщикам</a></li>
+							<li><a href="news.html">Новости и акции</a></li>
+						</ul>
+						<ul class="footer-menu my-ul">
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="delivery.html">Оплата и доставка</a></li>
+						</ul>
+						<ul class="footer-menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="#">Реквизиты</a></li>
+						</ul>
+
+						<div class="footer-box">
+							<div class="address">440047, Россия, ул. Аустрина, д. 63</div>
+							<a href="mailto:217-340@steklo58.ru">217-340@steklo58.ru</a>
+						</div>
+
+						<div class="footer-box">
+							<p>Отдел менеджеров:</p>
+							<a href="tel:+79677017340">+7 (967) 701-73-40</a>
+						</div>
+
+						<ul class="list-messengers my-ul">
+							<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Оставить отзыв</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Пожалуйста, поделитесь своими впечатлениями о компании или преобретенной продукции.</p>
+					</div>
+
+					<form method="post" class="form-callback">
+						<label>
+							<input type="text" placeholder="Имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="Должность" name="position">
+						</label>
+						<label>
+							<input type="text" placeholder="Название компании" name="name_company">
+						</label>
+						<label class="w100">
+							<textarea name="message" placeholder="Отзыв"></textarea>
+						</label>
+
+						<button type="submit" class="btn btn-accent">Отправить</button>
+						<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Обратный звонок</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text text-center theme-appeals">
+						<p>Выберите тему обращения:</p>
+					</div>
+
+					<form method="post" class="form-callback">
+						<div class="form-group">
+							<label class="label-radio">
+								<input type="radio" class="inp-radio" name="radio" checked>
+								<span class="radio-custom"></span>
+								<span class="radio-text">Продукция</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" class="inp-radio" name="radio">
+								<span class="radio-custom"></span>
+								<span class="radio-text">Сотрудничество</span>
+							</label>
+						</div>
+
+						<label>
+							<input type="text" placeholder="Имя" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="Телефон" name="phone" required>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить</button>
+						<div class="consent">Нажимая кнопку «Отправить» вы даете свое согласие на обратотку персональных данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
