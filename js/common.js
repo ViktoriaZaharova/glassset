@@ -43,6 +43,7 @@ $('.home-navigation-slider').slick({
 				slidesToShow: 1,
 				variableWidth: false,
 				speed: 700,
+				dots: true
 			}
 		}
 	]
@@ -70,6 +71,7 @@ $('.news-slider').slick({
 			breakpoint: 576,
 			settings: {
 				slidesToShow: 1,
+				dots: true
 			}
 		}
 	]
@@ -91,6 +93,7 @@ $('.reviews-video-slider').slick({
 			breakpoint: 576,
 			settings: {
 				slidesToShow: 1,
+				dots: true
 			}
 		}
 	]
@@ -106,6 +109,13 @@ $('.reviews-slider').slick({
 			breakpoint: 768,
 			settings: {
 				slidesToShow: 1,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				dots: true
 			}
 		}
 	]
@@ -142,7 +152,6 @@ $('.team-slider').slick({
 	slidesToShow: 4,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	swipe: false,
 	responsive: [
 		{
 			breakpoint: 992,
@@ -160,6 +169,8 @@ $('.team-slider').slick({
 			breakpoint: 576,
 			settings: {
 				slidesToShow: 1,
+				arrows: false, 
+				dots: true,
 			}
 		}
 	]

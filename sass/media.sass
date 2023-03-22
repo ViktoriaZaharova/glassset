@@ -109,7 +109,7 @@
 		display: none
 		position: fixed
 		z-index: 5
-		left: 0
+		right: 0
 		top: 0
 		height: 100%
 		overflow-y: auto
@@ -445,6 +445,17 @@
 	.home-slider-item
 		padding: 50px 0 300px
 
+	.home-navigation-slider, .news-slider, .reviews-video-slider, .reviews-slider
+		.slick-dots
+			margin: 20px auto 0
+			li
+				width: 10px
+				height: 10px
+				
+	.news-slider, .reviews-slider
+		.slick-dots
+			margin: 0				
+
 	.nav-tabs
 		.nav-item
 			margin: 0 20px 0 0
@@ -504,7 +515,6 @@
 		li
 			a
 				width: 100%
-				text-align: center
 
 	footer .logo
 		max-width: none
@@ -585,6 +595,15 @@
 	.page-basket h1, .page-basket h2, .page-basket .h2
 		font-size: 22px		
 
+	.team-slider
+		.slick-arrow
+			display: none
+		.slick-dots
+			margin: 30px auto 0
+			li
+				width: 10px
+				height: 10px	
+
 @media only screen and (max-width: 480px)
 	.logo-icon
 		max-width: 45px
@@ -657,6 +676,14 @@
 		margin: 0 0 50px
 		h1
 			margin: 0 0 30px
+
+	.product-card
+		padding: 30px 15px 20px
+		.slick-slide
+			padding: 0
+		.btn
+			padding: 0 10px
+			width: 100%			
 
 @media only screen and (max-width: 420px)
 	footer
